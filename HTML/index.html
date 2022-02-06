@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://kit.fontawesome.com/27b9d7ad5a.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Styles/Portfolio.css" />
+    <title>Portfolio</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-header-container">
+      <div class="block" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <p class="my-name">
+        <span class="span-jan" style="color: rgb(202, 55, 80)">Vincourek</span>Jan
+        
+      </p>
+      <ul>
+        <li>HOME</li>
+        <li>ABOUT</li>
+        <li>MY WORK</li>
+        <li>CONTACT ME</li>
+      </ul>
+    </header>
+    
+    <section class="Introduction">
+      <h1 class="hlavni-nadpis">
+        <span style="color: rgb(67, 143, 214)" > Hello,</span></span><br />
+        my name is Jan
+      </h1>
+      <h2 class="I-make-websites">I make Websites</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, beatae
+        aut. Quaerat quod commodi nobis nulla atque error pariatur similique
+        accusantium quis iste, ut eius consectetur aperiam molestiae porro
+        voluptatem!
+      </p>
+    </section>
+  
+    <section class="skills">
+      
+      <span style="font-size: 4rem;"><i class="fab fa-html5"></i></span>
+      <span style="font-size: 4rem;"><i class="fab fa-css3-alt"></i></span>
+      <span style="font-size: 4rem;"><i class="fab fa-js-square"></i></span>
+      <span style="font-size: 4rem;"><i class="fab fa-sass"></i></span>
+      <span style="font-size: 4rem;"><i class="fab fa-react"></i></span>
+      
+     
+    </section>
+    <section>
+      <h2 class="nadpis-my-work">My Work</h2>
+    </section>
+    <section class="my-work">
+      
+      <div class="container-first-work">
+        <h3>My Work Title</h3>
+        <img class="dummy-wrk-first" src="/Styles/Background_my_work/1.jpg" alt="dummy-picture-first">
+      
+      </div>
+    
+    <div class="container-second-work">
+      <h3>My Work Title</h3>
+      <img class="dummy-wrk-second" src="/Styles/Background_my_work/2.jpg" alt="dummy-picture-second">
+      
+    </div>
+    
+    <div class="container-third-work">
+      <h3>My Work Title</h3>
+      <img class="dummy-wrk-third" src="/Styles/Background_my_work/3.jpg" alt="dummy-picture-third">
+      
+    </div>
+    
+    <div class="container-fourth-work">
+      <h3>My Work Title</h3>
+      <img class="dummy-wrk-fourth" src="/Styles/Background_my_work/4.jpg" alt="dummy-picture-fourth">
+      
+         
+    </div>
+    </section>
+    
+    <section class="Contact-me">
+      <h2>Contact me</h2>
+      <form action="action_page.php">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name.." />
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your email.." />
+        <label for="subject">Subject</label>
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          placeholder="Subject.."
+        />
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Write something.."
+          style="height: 150px"
+        ></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+    <footer>
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-circle-up"></i></button>
+      <div class="container-fluid">
+        <!-- social media icons -->
+        <div class="social-icons mt-4">
+            <a href="https://www.facebook.com/jan.vincourek" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/vincourekj/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/jan-vincourek-68a441146/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            
+        </div>
+    </div>
+    </footer>
+  </body>
+  <script src="/JavaScript/Portfolio.js"></script>
+</html>
