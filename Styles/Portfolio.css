@@ -17,23 +17,21 @@ body {
 }
 
 .main-header-container {
+  overflow: hidden;
+  position: relative;
   margin: 0em;
   padding: 0em;
   font-size: 1.5rem;
   font-weight: bold;
   text-shadow: 0.8px 3px 4px #0b355d;
   width: auto;
-  /* Rotate first bar */
-  /* Fade out the second bar */
-  /* Rotate last bar */
+  background-color: transparent;
 }
 
 .main-header-container .my-name {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: inline-block;
+  margin: 0em 0em 0.5em 0em;
+  padding: 0em;
   font-size: clamp(2rem, 4.5vw, 3rem);
 }
 
@@ -47,61 +45,53 @@ body {
   font-size: clamp(2rem, 4.5vw, 3rem);
 }
 
-.main-header-container ul {
-  display: none;
+.main-header-container #mobile-menu {
   position: fixed;
   z-index: 999;
-  width: 66%;
-  right: 0;
-  top: 0;
+  display: none;
+  cursor: pointer;
+  float: right;
+  right: 20px;
+  top: 10vh;
   background: #ca3750;
-  height: 100vh;
   padding: 1em;
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow: hidden;
+  border-radius: 5%;
+  text-decoration: none;
 }
 
-.main-header-container ul li {
+.main-header-container li a {
   color: white;
   text-decoration: none;
   display: block;
   padding: 0.5em;
-  font-size: 1.3em;
+  font-size: 0.8em;
   text-align: center;
+  background: #ca3750;
 }
 
-.main-header-container ul li:hover {
+.main-header-container li a:hover {
   font-weight: bold;
   color: #438fd6;
 }
 
-.main-header-container .block {
+.main-header-container .icon {
+  position: fixed;
+  display: block;
   float: right;
   cursor: pointer;
-  background-color: transparent;
-}
-
-.main-header-container .bar1,
-.main-header-container .bar2,
-.main-header-container .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #ca3750;
-  margin: 6px 0;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.main-header-container .change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.main-header-container .change .bar2 {
-  opacity: 0;
-}
-
-.main-header-container .change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
+  background-color: rgba(116, 116, 116, 0);
+  font-size: 45px;
+  margin: 0em;
+  padding: 0em;
+  right: 20px;
 }
 
 .Introduction {
@@ -418,11 +408,11 @@ h3 {
 }
 
 .fas {
-  color: rgba(202, 55, 79, 0.623);
+  color: #ca3750;
 }
 
 .fas:hover {
-  color: rgba(67, 143, 214, 0.753);
+  color: #438fd6;
 }
 
 footer {
