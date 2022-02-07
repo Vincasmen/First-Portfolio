@@ -10,11 +10,14 @@ body {
   margin: 1em;
   padding: 0;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   min-height: 500px;
   height: 100%;
+}
+
+body :root {
+  background-attachment: fixed;
 }
 
 .main-header-container {
