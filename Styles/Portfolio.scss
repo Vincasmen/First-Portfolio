@@ -25,6 +25,7 @@ body {
   background-position: center;
   background-size: cover;
   min-height: 500px;
+  height: 100%;
 }
 //----------------NAVIGAČNÍ SEKCE----------------//
 .main-header-container {
@@ -55,12 +56,13 @@ body {
   }
 
   #mobile-menu {
+    display: none;
     position: fixed;
     z-index: 999;
     cursor: pointer;
     float: right;
     right: 20px;
-    top: 10vh;
+    top: 6vh;
     background: $PrimaryRed;
     padding: 1em;
     margin: auto;
@@ -96,12 +98,12 @@ body {
   }
 
   .icon {
-    position: fixed;
     display: block;
     float: right;
     cursor: pointer;
     background-color: rgba(116, 116, 116, 0);
     font-size: 45px;
+    top: 1vh;
     margin: 0em;
     padding: 0em;
     right: 20px;
@@ -122,16 +124,19 @@ body {
   border-radius: 15px;
 
   width: clamp(300px, 87vw, 600px);
-  height: clamp(350px, 60vw, 450px);
+  height: clamp(228px, 58vw, 450px);
 
   .hlavni-nadpis {
     justify-content: left;
-    font-size: clamp(3rem, 10vw, 4rem);
+    font-size: clamp(2rem, 5vw, 4rem);
     color: rgb(202, 55, 80);
     text-align: left;
     padding: 0;
     margin: 0;
     text-shadow: 0.8px 3px 3px #0b355d;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 
   .I-make-websites {
