@@ -57,7 +57,6 @@ body {
   #mobile-menu {
     position: fixed;
     z-index: 999;
-    display: none;
     cursor: pointer;
     float: right;
     right: 20px;
@@ -69,22 +68,33 @@ body {
     height: fit-content;
     overflow: hidden;
     border-radius: 5%;
-    text-decoration: none;
+    border: 2px solid white;
   }
+  ul {
+    list-style: none;
+    list-style-type: none;
+    li a {
+      color: white;
+      text-decoration: none;
+      list-style: none;
+      list-style-type: none;
+      display: block;
+      padding: 0.3em;
+      font-size: clamp(0.5em, 3vw, 4em);
+      text-align: center;
+      background: $PrimaryRed;
+      width: clamp(8em, 3vw, 3em);
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
 
-  li a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 0.5em;
-    font-size: 0.8em;
-    text-align: center;
-    background: $PrimaryRed;
-    &:hover {
-      font-weight: bold;
-      color: $PrimaryBlue;
+      &:hover {
+        font-weight: bold;
+        color: $PrimaryBlue;
+      }
     }
   }
+
   .icon {
     position: fixed;
     display: block;
@@ -105,18 +115,15 @@ body {
   overflow: hidden;
   padding: 0.5em;
   margin: auto;
+  justify-items: auto;
 
   backdrop-filter: blur(1.5px);
   background-color: rgba(85, 85, 85, 0.253);
   border-radius: 15px;
 
   width: clamp(300px, 87vw, 600px);
-  height: clamp(200px, 60vw, 450px);
+  height: clamp(350px, 60vw, 450px);
 
-  /*@media only screen and (min-width: 1550px) {
-    width: 50%;
-  }
-*/
   .hlavni-nadpis {
     justify-content: left;
     font-size: clamp(3rem, 10vw, 4rem);
@@ -149,22 +156,25 @@ body {
 }
 
 .skills {
+  padding: 0em;
   margin: auto;
-  padding: 0.2em;
-  justify-content: space-evenly;
   display: flex;
+  justify-content: center;
   grid-gap: 30px;
   backdrop-filter: blur(1.5px);
   background-color: rgba(85, 85, 85, 0.253);
   border-radius: 15px;
-  width: clamp(300px, 88vw, 610px);
+  width: clamp(320px, 92vw, 610px);
+  i {
+    font-size: clamp(40px, 11.5vw, 100px);
+    justify-items: auto;
+  }
 
   .fa-html5:hover {
-    display: flex;
-    justify-items: auto;
     color: #f16529;
     transition: color 0.7s;
   }
+
   .fa-css3-alt:hover {
     color: #2aa9e0;
     transition: color 0.7s;
@@ -175,13 +185,14 @@ body {
   }
   .fa-sass:hover {
     color: #ce679a;
-    transition: color 0.5s;
+    transition: color 0.7s;
   }
   .fa-react:hover {
     color: rgb(65, 188, 225);
-    transition: color 0.9s;
+    transition: color 0.7s;
   }
 }
+
 .nadpis-my-work {
   display: flex;
   justify-content: center;
@@ -331,7 +342,7 @@ footer {
   margin: 1em;
 }
 .social-icons {
-  font-size: 36px;
+  font-size: 35px;
   cursor: pointer;
 }
 .fa-facebook:hover,
