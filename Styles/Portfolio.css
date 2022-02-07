@@ -48,7 +48,6 @@ body {
 .main-header-container #mobile-menu {
   position: fixed;
   z-index: 999;
-  display: none;
   cursor: pointer;
   float: right;
   right: 20px;
@@ -64,20 +63,31 @@ body {
   height: fit-content;
   overflow: hidden;
   border-radius: 5%;
-  text-decoration: none;
+  border: 2px solid white;
 }
 
-.main-header-container li a {
+.main-header-container ul {
+  list-style: none;
+  list-style-type: none;
+}
+
+.main-header-container ul li a {
   color: white;
   text-decoration: none;
+  list-style: none;
+  list-style-type: none;
   display: block;
-  padding: 0.5em;
-  font-size: 0.8em;
+  padding: 0.3em;
+  font-size: clamp(0.5em, 3vw, 4em);
   text-align: center;
   background: #ca3750;
+  width: clamp(8em, 3vw, 3em);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
-.main-header-container li a:hover {
+.main-header-container ul li a:hover {
   font-weight: bold;
   color: #438fd6;
 }
@@ -105,16 +115,13 @@ body {
   overflow: hidden;
   padding: 0.5em;
   margin: auto;
+  justify-items: auto;
   -webkit-backdrop-filter: blur(1.5px);
           backdrop-filter: blur(1.5px);
   background-color: rgba(85, 85, 85, 0.253);
   border-radius: 15px;
   width: clamp(300px, 87vw, 600px);
-  height: clamp(200px, 60vw, 450px);
-  /*@media only screen and (min-width: 1550px) {
-    width: 50%;
-  }
-*/
+  height: clamp(350px, 60vw, 450px);
 }
 
 .Introduction .hlavni-nadpis {
@@ -161,27 +168,28 @@ body {
 }
 
 .skills {
+  padding: 0em;
   margin: auto;
-  padding: 0.2em;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   grid-gap: 30px;
   -webkit-backdrop-filter: blur(1.5px);
           backdrop-filter: blur(1.5px);
   background-color: rgba(85, 85, 85, 0.253);
   border-radius: 15px;
-  width: clamp(300px, 88vw, 610px);
+  width: clamp(320px, 92vw, 610px);
+}
+
+.skills i {
+  font-size: clamp(40px, 11.5vw, 100px);
+  justify-items: auto;
 }
 
 .skills .fa-html5:hover {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-items: auto;
   color: #f16529;
   -webkit-transition: color 0.7s;
   transition: color 0.7s;
@@ -201,14 +209,14 @@ body {
 
 .skills .fa-sass:hover {
   color: #ce679a;
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
+  -webkit-transition: color 0.7s;
+  transition: color 0.7s;
 }
 
 .skills .fa-react:hover {
   color: #41bce1;
-  -webkit-transition: color 0.9s;
-  transition: color 0.9s;
+  -webkit-transition: color 0.7s;
+  transition: color 0.7s;
 }
 
 .nadpis-my-work {
@@ -426,7 +434,7 @@ footer {
 }
 
 .social-icons {
-  font-size: 36px;
+  font-size: 35px;
   cursor: pointer;
 }
 
