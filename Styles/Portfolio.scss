@@ -22,439 +22,429 @@ body {
   padding: 0;
   background-attachment: fixed;
   background-repeat: no-repeat;
-
   background-position: center;
   background-size: cover;
-
   min-height: 500px;
   height: 100%;
-  :root {
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+}
+//----------------NAVIGAČNÍ SEKCE----------------//
+.main-header-container {
+  overflow: hidden;
+  position: relative;
+  margin: 0em;
+  padding: 0em;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 0.8px 3px 4px #0b355d;
+  width: auto;
+  background-color: transparent;
 
-    background-position: center;
-    background-size: cover;
+  .my-name {
+    display: inline-block;
+    margin: 0em 0em 0.5em 0em;
+    padding: 0em;
+
+    &:hover {
+      color: $PrimaryBlue;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    font-size: clamp(2rem, 4.5vw, 3rem);
+    .span-jan {
+      font-size: clamp(2rem, 4.5vw, 3rem);
+    }
   }
 
-  //----------------NAVIGAČNÍ SEKCE----------------//
-  .main-header-container {
+  #mobile-menu {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    cursor: pointer;
+    float: right;
+    right: 20px;
+    top: 9vh;
+    background: $PrimaryRed;
+    padding: 1em;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
     overflow: hidden;
-    position: relative;
-    margin: 0em;
-    padding: 0em;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-shadow: 0.8px 3px 4px #0b355d;
-    width: auto;
-    background-color: transparent;
-
-    .my-name {
-      display: inline-block;
-      margin: 0em 0em 0.5em 0em;
-      padding: 0em;
-
-      &:hover {
-        color: $PrimaryBlue;
-        font-weight: bold;
-        cursor: pointer;
-      }
-      font-size: clamp(2rem, 4.5vw, 3rem);
-      .span-jan {
-        font-size: clamp(2rem, 4.5vw, 3rem);
-      }
-    }
-
-    #mobile-menu {
-      display: none;
-      position: fixed;
-      z-index: 999;
-      cursor: pointer;
-      float: right;
-      right: 20px;
-      top: 9vh;
-      background: $PrimaryRed;
-      padding: 1em;
-      margin: auto;
-      width: fit-content;
-      height: fit-content;
-      overflow: hidden;
-      border-radius: 5%;
-      border: 2px solid white;
-    }
-    ul {
+    border-radius: 5%;
+    border: 2px solid white;
+  }
+  ul {
+    list-style: none;
+    list-style-type: none;
+    li a {
+      color: white;
+      text-decoration: none;
       list-style: none;
       list-style-type: none;
-      li a {
-        color: white;
-        text-decoration: none;
-        list-style: none;
-        list-style-type: none;
-        display: block;
-        padding: 0.3em;
-        font-size: clamp(0.5em, 3vw, 4em);
-        text-align: center;
-        background: $PrimaryRed;
-        width: clamp(8em, 3vw, 3em);
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-
-        &:hover {
-          font-weight: bold;
-          color: $PrimaryBlue;
-        }
-      }
-    }
-
-    .icon {
       display: block;
-      float: right;
-      cursor: pointer;
-      background-color: rgba(116, 116, 116, 0);
-      font-size: 45px;
-      top: 1vh;
-      margin: 0em;
-      padding: 0em;
-      right: 20px;
-    }
-  }
-
-  .Introduction {
-    display: flexbox;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    padding: 0.5em;
-    margin: auto;
-    justify-items: auto;
-
-    backdrop-filter: blur(1.5px);
-    background-color: rgba(85, 85, 85, 0.253);
-    border-radius: 15px;
-
-    width: clamp(300px, 87vw, 600px);
-    height: clamp(228px, 58vw, 450px);
-
-    .hlavni-nadpis {
-      justify-content: left;
-      font-size: clamp(2rem, 5vw, 4rem);
-      color: rgb(202, 55, 80);
-      text-align: left;
-      padding: 0;
-      margin: 0;
-      text-shadow: 0.8px 3px 3px #0b355d;
+      padding: 0.3em;
+      font-size: clamp(0.5em, 3vw, 4em);
+      text-align: center;
+      background: $PrimaryRed;
+      width: clamp(8em, 3vw, 3em);
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
-    }
 
-    .I-make-websites {
-      display: flex;
-      color: rgb(89, 159, 224);
-      font-size: clamp(1.5rem, 5vw, 3rem);
-      padding: 0.2em 0em 0.2em 0em;
-      margin: 0;
-      font-weight: 800;
-      text-shadow: 0.8px 3px 3px #0b355d;
-      letter-spacing: 1.1px;
-    }
-    p {
-      display: flex;
-      justify-content: left;
-      padding: 0em;
-      margin: 0em;
-
-      @include body-text;
-      text-shadow: 0.5px 0.8px 2px #0b355d;
+      &:hover {
+        font-weight: bold;
+        color: $PrimaryBlue;
+      }
     }
   }
 
-  .skills {
-    padding: 0em;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    grid-gap: 30px;
-    backdrop-filter: blur(1.5px);
-    background-color: rgba(85, 85, 85, 0.253);
-    border-radius: 15px;
-    width: clamp(320px, 92vw, 610px);
-    i {
-      font-size: clamp(40px, 11.5vw, 100px);
-      justify-items: auto;
-    }
-
-    .fa-html5:hover {
-      color: #f16529;
-      transition: color 0.7s;
-    }
-
-    .fa-css3-alt:hover {
-      color: #2aa9e0;
-      transition: color 0.7s;
-    }
-    .fa-js-square:hover {
-      color: #f7e018;
-      transition: color 0.7s;
-    }
-    .fa-sass:hover {
-      color: #ce679a;
-      transition: color 0.7s;
-    }
-    .fa-react:hover {
-      color: rgb(65, 188, 225);
-      transition: color 0.7s;
-    }
-  }
-
-  .nadpis-my-work {
-    display: flex;
-    justify-content: center;
-    padding: 0em;
-    color: rgb(202, 55, 80);
-    font-weight: 800;
-    font-size: 3.2em;
-    text-decoration: underline $PrimaryBlue;
-    font-size: clamp(2.7rem, 4.5vw, 3rem);
-  }
-
-  .my-work {
-    display: grid;
-  }
-  h3 {
-    display: flex;
-    justify-content: center;
-    font-size: 1.7em;
-    color: $PrimaryRed;
-    padding: 1em;
-    margin: 0em;
-    font-size: clamp(2rem, 4.5vw, 3rem);
-  }
-  .container-first-work {
-    display: grid;
-    justify-content: center;
-    .dummy-wrk-first {
-      display: block;
-      max-width: 100%;
-      aspect-ratio: 1 / 1;
-      object-fit: cover;
-      width: clamp(200px, 90vw, 500px);
-      height: clamp(200px, 90vw, 300px);
-      border-radius: 5%;
-    }
-  }
-  .container-second-work {
-    display: grid;
-    justify-content: center;
-    .dummy-wrk-second {
-      display: block;
-      max-width: 100%;
-      aspect-ratio: 1 / 1;
-      object-fit: cover;
-      width: clamp(200px, 90vw, 500px);
-      height: clamp(200px, 90vw, 300px);
-      border-radius: 5%;
-    }
-  }
-  .container-third-work {
-    display: grid;
-    justify-content: center;
-    .dummy-wrk-third {
-      display: block;
-      max-width: 100%;
-      aspect-ratio: 1 / 1;
-      object-fit: cover;
-      width: clamp(200px, 90vw, 500px);
-      height: clamp(200px, 90vw, 300px);
-      border-radius: 5%;
-    }
-  }
-  .container-fourth-work {
-    display: grid;
-    justify-content: center;
-    .dummy-wrk-fourth {
-      display: block;
-      max-width: 100%;
-      aspect-ratio: 1 / 1;
-      object-fit: cover;
-      width: clamp(200px, 90vw, 500px);
-      height: clamp(200px, 90vw, 300px);
-      border-radius: 5%;
-    }
-  }
-
-  //----------CONTACT FORM-----------//
-
-  .Contact-me {
-    display: grid;
-    justify-content: center;
-    max-width: auto;
-
-    /* Style inputs with type="text", select elements and textareas */
-    input[type="text"],
-    select,
-    textarea {
-      width: 100%; /* Full width */
-      padding: 12px; /* Some padding */
-      border: 1px solid rgb(65, 64, 64); /* Gray border */
-      border-radius: 4px; /* Rounded borders */
-      box-sizing: border-box; /* Make sure that padding and width stays in place */
-      margin-top: 6px; /* Add a top margin */
-      margin-bottom: 16px; /* Bottom margin */
-      resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-    }
-
-    /* Style the submit button with a specific background color etc */
-    input[type="submit"] {
-      background-color: rgb(202, 55, 79);
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    /* When moving the mouse over the submit button, add a darker green color */
-    input[type="submit"]:hover {
-      background-color: rgb(67, 143, 214);
-      transition: background-color 0.5s;
-    }
-
-    /* Add a background color and some padding around the form */
-    .block {
-      border-radius: 5px;
-      background-color: #f2f2f200;
-      padding: 0px;
-    }
-  }
-
-  #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 90px; /* Place the button at the bottom of the page */
-    right: 18px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: rgba(202, 55, 79, 0); /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    border-radius: 50px;
-    font-size: 18px; /* Increase font size */
-    transition: background-color 0.5s;
-    font-size: 40px;
-  }
-  .fas {
-    color: $PrimaryRed;
-    &:hover {
-      color: $PrimaryBlue;
-    }
-  }
-
-  footer {
-    display: grid;
-    justify-content: center;
-    padding: 0.5em;
-    margin: 1em;
-  }
-  .social-icons {
-    font-size: 35px;
+  .icon {
+    display: block;
+    float: right;
     cursor: pointer;
+    background-color: rgba(116, 116, 116, 0);
+    font-size: 45px;
+    top: 1vh;
+    margin: 0em;
+    padding: 0em;
+    right: 20px;
   }
-  .fa-facebook:hover,
-  .fa-instagram:hover,
-  .fa-twitter:hover,
-  .fa-linkedin:hover,
-  .fa-twitch:hover {
+}
+
+.Introduction {
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 0.5em;
+  margin: auto;
+  justify-items: auto;
+
+  backdrop-filter: blur(1.5px);
+  background-color: rgba(85, 85, 85, 0.253);
+  border-radius: 15px;
+
+  width: clamp(300px, 87vw, 600px);
+  height: clamp(228px, 58vw, 450px);
+
+  .hlavni-nadpis {
+    justify-content: left;
+    font-size: clamp(2rem, 5vw, 4rem);
+    color: rgb(202, 55, 80);
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    text-shadow: 0.8px 3px 3px #0b355d;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .I-make-websites {
+    display: flex;
+    color: rgb(89, 159, 224);
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    padding: 0.2em 0em 0.2em 0em;
+    margin: 0;
+    font-weight: 800;
+    text-shadow: 0.8px 3px 3px #0b355d;
+    letter-spacing: 1.1px;
+  }
+  p {
+    display: flex;
+    justify-content: left;
+    padding: 0em;
+    margin: 0em;
+
+    @include body-text;
+    text-shadow: 0.5px 0.8px 2px #0b355d;
+  }
+}
+
+.skills {
+  padding: 0em;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  grid-gap: 30px;
+  backdrop-filter: blur(1.5px);
+  background-color: rgba(85, 85, 85, 0.253);
+  border-radius: 15px;
+  width: clamp(320px, 92vw, 610px);
+  i {
+    font-size: clamp(40px, 11.5vw, 100px);
+    justify-items: auto;
+  }
+
+  .fa-html5:hover {
+    color: #f16529;
+    transition: color 0.7s;
+  }
+
+  .fa-css3-alt:hover {
+    color: #2aa9e0;
+    transition: color 0.7s;
+  }
+  .fa-js-square:hover {
+    color: #f7e018;
+    transition: color 0.7s;
+  }
+  .fa-sass:hover {
+    color: #ce679a;
+    transition: color 0.7s;
+  }
+  .fa-react:hover {
     color: rgb(65, 188, 225);
     transition: color 0.7s;
   }
-  .fab {
-    color: rgba(202, 55, 79, 0.746);
+}
+
+.nadpis-my-work {
+  display: flex;
+  justify-content: center;
+  padding: 0em;
+  color: rgb(202, 55, 80);
+  font-weight: 800;
+  font-size: 3.2em;
+  text-decoration: underline $PrimaryBlue;
+  font-size: clamp(2.7rem, 4.5vw, 3rem);
+}
+
+.my-work {
+  display: grid;
+}
+h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.7em;
+  color: $PrimaryRed;
+  padding: 1em;
+  margin: 0em;
+  font-size: clamp(2rem, 4.5vw, 3rem);
+}
+.container-first-work {
+  display: grid;
+  justify-content: center;
+  .dummy-wrk-first {
+    display: block;
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: clamp(200px, 90vw, 500px);
+    height: clamp(200px, 90vw, 300px);
+    border-radius: 5%;
   }
-  /* footer styling */
-  #footer {
-    background-color: #808080;
-    text-align: center;
+}
+.container-second-work {
+  display: grid;
+  justify-content: center;
+  .dummy-wrk-second {
+    display: block;
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: clamp(200px, 90vw, 500px);
+    height: clamp(200px, 90vw, 300px);
+    border-radius: 5%;
   }
-  @media only screen and (min-width: 1100px) {
-    .my-work {
+}
+.container-third-work {
+  display: grid;
+  justify-content: center;
+  .dummy-wrk-third {
+    display: block;
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: clamp(200px, 90vw, 500px);
+    height: clamp(200px, 90vw, 300px);
+    border-radius: 5%;
+  }
+}
+.container-fourth-work {
+  display: grid;
+  justify-content: center;
+  .dummy-wrk-fourth {
+    display: block;
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: clamp(200px, 90vw, 500px);
+    height: clamp(200px, 90vw, 300px);
+    border-radius: 5%;
+  }
+}
+
+//----------CONTACT FORM-----------//
+
+.Contact-me {
+  display: grid;
+  justify-content: center;
+  max-width: auto;
+
+  /* Style inputs with type="text", select elements and textareas */
+  input[type="text"],
+  select,
+  textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid rgb(65, 64, 64); /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+  /* Style the submit button with a specific background color etc */
+  input[type="submit"] {
+    background-color: rgb(202, 55, 79);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type="submit"]:hover {
+    background-color: rgb(67, 143, 214);
+    transition: background-color 0.5s;
+  }
+
+  /* Add a background color and some padding around the form */
+  .block {
+    border-radius: 5px;
+    background-color: #f2f2f200;
+    padding: 0px;
+  }
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 90px; /* Place the button at the bottom of the page */
+  right: 18px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgba(202, 55, 79, 0); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  border-radius: 50px;
+  font-size: 18px; /* Increase font size */
+  transition: background-color 0.5s;
+  font-size: 40px;
+}
+.fas {
+  color: $PrimaryRed;
+  &:hover {
+    color: $PrimaryBlue;
+  }
+}
+
+footer {
+  display: grid;
+  justify-content: center;
+  padding: 0.5em;
+  margin: 1em;
+}
+.social-icons {
+  font-size: 35px;
+  cursor: pointer;
+}
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-twitter:hover,
+.fa-linkedin:hover,
+.fa-twitch:hover {
+  color: rgb(65, 188, 225);
+  transition: color 0.7s;
+}
+.fab {
+  color: rgba(202, 55, 79, 0.746);
+}
+/* footer styling */
+#footer {
+  background-color: #808080;
+  text-align: center;
+}
+@media only screen and (min-width: 1100px) {
+  .my-work {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    table-layout: fixed;
+
+    h3 {
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
-      table-layout: fixed;
-
-      h3 {
-        display: flex;
-        justify-content: center;
-        color: $PrimaryRed;
-        padding: 0.5em;
-        margin: auto;
-        font-size: clamp(2rem, 4.5vw, 3rem);
+      color: $PrimaryRed;
+      padding: 0.5em;
+      margin: auto;
+      font-size: clamp(2rem, 4.5vw, 3rem);
+    }
+    .container-first-work {
+      margin: 1em;
+      .dummy-wrk-first {
+        display: block;
+        max-width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
       }
-      .container-first-work {
-        margin: 1em;
-        .dummy-wrk-first {
-          display: block;
-          max-width: 100%;
-          aspect-ratio: 1 / 1;
-          object-fit: cover;
-        }
+    }
+    .container-second-work {
+      margin: 1em;
+      .dummy-wrk-second {
+        display: block;
+        max-width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
       }
-      .container-second-work {
-        margin: 1em;
-        .dummy-wrk-second {
-          display: block;
-          max-width: 100%;
-          aspect-ratio: 1 / 1;
-          object-fit: cover;
-        }
+    }
+    .container-third-work {
+      margin: 1em;
+      .dummy-wrk-third {
+        display: block;
+        max-width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
       }
-      .container-third-work {
-        margin: 1em;
-        .dummy-wrk-third {
-          display: block;
-          max-width: 100%;
-          aspect-ratio: 1 / 1;
-          object-fit: cover;
-        }
-      }
-      .container-fourth-work {
-        margin: 1em;
-        .dummy-wrk-fourth {
-          display: block;
-          aspect-ratio: 1 / 1;
-          max-width: 100%;
-          object-fit: cover;
-        }
+    }
+    .container-fourth-work {
+      margin: 1em;
+      .dummy-wrk-fourth {
+        display: block;
+        aspect-ratio: 1 / 1;
+        max-width: 100%;
+        object-fit: cover;
       }
     }
   }
+}
 
-  @media only screen and (min-width: 1650px) {
-    .my-work {
-      display: flex;
-      justify-content: center;
-      padding: 0em 10em 0em 10em;
-      table-layout: fixed;
-    }
+@media only screen and (min-width: 1650px) {
+  .my-work {
+    display: flex;
+    justify-content: center;
+    padding: 0em 10em 0em 10em;
+    table-layout: fixed;
   }
+}
 
-  @media only screen and (min-width: 1950px) {
-    .my-work {
-      display: flex;
-      justify-content: center;
-      padding: 0em 20em 0em 20em;
-      table-layout: fixed;
-    }
+@media only screen and (min-width: 1950px) {
+  .my-work {
+    display: flex;
+    justify-content: center;
+    padding: 0em 20em 0em 20em;
+    table-layout: fixed;
   }
+}
 
-  @media only screen and (min-width: 2285px) {
-    .my-work {
-      display: flex;
-      justify-content: center;
-      padding: 0em 30em 0em 30em;
-      table-layout: fixed;
-    }
+@media only screen and (min-width: 2285px) {
+  .my-work {
+    display: flex;
+    justify-content: center;
+    padding: 0em 30em 0em 30em;
+    table-layout: fixed;
   }
 }

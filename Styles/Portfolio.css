@@ -15,17 +15,9 @@ body {
   background-size: cover;
   min-height: 500px;
   height: 100%;
-  /* footer styling */
 }
 
-body :root {
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-body .main-header-container {
+.main-header-container {
   overflow: hidden;
   position: relative;
   margin: 0em;
@@ -37,24 +29,24 @@ body .main-header-container {
   background-color: transparent;
 }
 
-body .main-header-container .my-name {
+.main-header-container .my-name {
   display: inline-block;
   margin: 0em 0em 0.5em 0em;
   padding: 0em;
   font-size: clamp(2rem, 4.5vw, 3rem);
 }
 
-body .main-header-container .my-name:hover {
+.main-header-container .my-name:hover {
   color: #438fd6;
   font-weight: bold;
   cursor: pointer;
 }
 
-body .main-header-container .my-name .span-jan {
+.main-header-container .my-name .span-jan {
   font-size: clamp(2rem, 4.5vw, 3rem);
 }
 
-body .main-header-container #mobile-menu {
+.main-header-container #mobile-menu {
   display: none;
   position: fixed;
   z-index: 999;
@@ -76,12 +68,12 @@ body .main-header-container #mobile-menu {
   border: 2px solid white;
 }
 
-body .main-header-container ul {
+.main-header-container ul {
   list-style: none;
   list-style-type: none;
 }
 
-body .main-header-container ul li a {
+.main-header-container ul li a {
   color: white;
   text-decoration: none;
   list-style: none;
@@ -97,12 +89,12 @@ body .main-header-container ul li a {
   overflow: hidden;
 }
 
-body .main-header-container ul li a:hover {
+.main-header-container ul li a:hover {
   font-weight: bold;
   color: #438fd6;
 }
 
-body .main-header-container .icon {
+.main-header-container .icon {
   display: block;
   float: right;
   cursor: pointer;
@@ -114,7 +106,7 @@ body .main-header-container .icon {
   right: 20px;
 }
 
-body .Introduction {
+.Introduction {
   display: flexbox;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -134,7 +126,7 @@ body .Introduction {
   height: clamp(228px, 58vw, 450px);
 }
 
-body .Introduction .hlavni-nadpis {
+.Introduction .hlavni-nadpis {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
@@ -149,7 +141,7 @@ body .Introduction .hlavni-nadpis {
   overflow: hidden;
 }
 
-body .Introduction .I-make-websites {
+.Introduction .I-make-websites {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,7 +154,7 @@ body .Introduction .I-make-websites {
   letter-spacing: 1.1px;
 }
 
-body .Introduction p {
+.Introduction p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,7 +172,7 @@ body .Introduction p {
   text-shadow: 0.5px 0.8px 2px #0b355d;
 }
 
-body .skills {
+.skills {
   padding: 0em;
   margin: auto;
   display: -webkit-box;
@@ -197,42 +189,42 @@ body .skills {
   width: clamp(320px, 92vw, 610px);
 }
 
-body .skills i {
+.skills i {
   font-size: clamp(40px, 11.5vw, 100px);
   justify-items: auto;
 }
 
-body .skills .fa-html5:hover {
+.skills .fa-html5:hover {
   color: #f16529;
   -webkit-transition: color 0.7s;
   transition: color 0.7s;
 }
 
-body .skills .fa-css3-alt:hover {
+.skills .fa-css3-alt:hover {
   color: #2aa9e0;
   -webkit-transition: color 0.7s;
   transition: color 0.7s;
 }
 
-body .skills .fa-js-square:hover {
+.skills .fa-js-square:hover {
   color: #f7e018;
   -webkit-transition: color 0.7s;
   transition: color 0.7s;
 }
 
-body .skills .fa-sass:hover {
+.skills .fa-sass:hover {
   color: #ce679a;
   -webkit-transition: color 0.7s;
   transition: color 0.7s;
 }
 
-body .skills .fa-react:hover {
+.skills .fa-react:hover {
   color: #41bce1;
   -webkit-transition: color 0.7s;
   transition: color 0.7s;
 }
 
-body .nadpis-my-work {
+.nadpis-my-work {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -248,12 +240,12 @@ body .nadpis-my-work {
   font-size: clamp(2.7rem, 4.5vw, 3rem);
 }
 
-body .my-work {
+.my-work {
   display: -ms-grid;
   display: grid;
 }
 
-body h3 {
+h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -267,7 +259,7 @@ body h3 {
   font-size: clamp(2rem, 4.5vw, 3rem);
 }
 
-body .container-first-work {
+.container-first-work {
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -275,7 +267,7 @@ body .container-first-work {
           justify-content: center;
 }
 
-body .container-first-work .dummy-wrk-first {
+.container-first-work .dummy-wrk-first {
   display: block;
   max-width: 100%;
   aspect-ratio: 1 / 1;
@@ -286,7 +278,7 @@ body .container-first-work .dummy-wrk-first {
   border-radius: 5%;
 }
 
-body .container-second-work {
+.container-second-work {
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -294,7 +286,7 @@ body .container-second-work {
           justify-content: center;
 }
 
-body .container-second-work .dummy-wrk-second {
+.container-second-work .dummy-wrk-second {
   display: block;
   max-width: 100%;
   aspect-ratio: 1 / 1;
@@ -305,7 +297,7 @@ body .container-second-work .dummy-wrk-second {
   border-radius: 5%;
 }
 
-body .container-third-work {
+.container-third-work {
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -313,7 +305,7 @@ body .container-third-work {
           justify-content: center;
 }
 
-body .container-third-work .dummy-wrk-third {
+.container-third-work .dummy-wrk-third {
   display: block;
   max-width: 100%;
   aspect-ratio: 1 / 1;
@@ -324,7 +316,7 @@ body .container-third-work .dummy-wrk-third {
   border-radius: 5%;
 }
 
-body .container-fourth-work {
+.container-fourth-work {
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -332,7 +324,7 @@ body .container-fourth-work {
           justify-content: center;
 }
 
-body .container-fourth-work .dummy-wrk-fourth {
+.container-fourth-work .dummy-wrk-fourth {
   display: block;
   max-width: 100%;
   aspect-ratio: 1 / 1;
@@ -343,7 +335,7 @@ body .container-fourth-work .dummy-wrk-fourth {
   border-radius: 5%;
 }
 
-body .Contact-me {
+.Contact-me {
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -356,9 +348,9 @@ body .Contact-me {
   /* Add a background color and some padding around the form */
 }
 
-body .Contact-me input[type="text"],
-body .Contact-me select,
-body .Contact-me textarea {
+.Contact-me input[type="text"],
+.Contact-me select,
+.Contact-me textarea {
   width: 100%;
   /* Full width */
   padding: 12px;
@@ -378,7 +370,7 @@ body .Contact-me textarea {
   /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-body .Contact-me input[type="submit"] {
+.Contact-me input[type="submit"] {
   background-color: #ca374f;
   color: white;
   padding: 12px 20px;
@@ -387,19 +379,19 @@ body .Contact-me input[type="submit"] {
   cursor: pointer;
 }
 
-body .Contact-me input[type="submit"]:hover {
+.Contact-me input[type="submit"]:hover {
   background-color: #438fd6;
   -webkit-transition: background-color 0.5s;
   transition: background-color 0.5s;
 }
 
-body .Contact-me .block {
+.Contact-me .block {
   border-radius: 5px;
   background-color: #f2f2f200;
   padding: 0px;
 }
 
-body #myBtn {
+#myBtn {
   display: none;
   /* Hidden by default */
   position: fixed;
@@ -428,15 +420,15 @@ body #myBtn {
   font-size: 40px;
 }
 
-body .fas {
+.fas {
   color: #ca3750;
 }
 
-body .fas:hover {
+.fas:hover {
   color: #438fd6;
 }
 
-body footer {
+footer {
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -446,32 +438,33 @@ body footer {
   margin: 1em;
 }
 
-body .social-icons {
+.social-icons {
   font-size: 35px;
   cursor: pointer;
 }
 
-body .fa-facebook:hover,
-body .fa-instagram:hover,
-body .fa-twitter:hover,
-body .fa-linkedin:hover,
-body .fa-twitch:hover {
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-twitter:hover,
+.fa-linkedin:hover,
+.fa-twitch:hover {
   color: #41bce1;
   -webkit-transition: color 0.7s;
   transition: color 0.7s;
 }
 
-body .fab {
+.fab {
   color: rgba(202, 55, 79, 0.746);
 }
 
-body #footer {
+/* footer styling */
+#footer {
   background-color: #808080;
   text-align: center;
 }
 
 @media only screen and (min-width: 1100px) {
-  body .my-work {
+  .my-work {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -482,7 +475,7 @@ body #footer {
         flex-wrap: wrap;
     table-layout: fixed;
   }
-  body .my-work h3 {
+  .my-work h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -494,40 +487,40 @@ body #footer {
     margin: auto;
     font-size: clamp(2rem, 4.5vw, 3rem);
   }
-  body .my-work .container-first-work {
+  .my-work .container-first-work {
     margin: 1em;
   }
-  body .my-work .container-first-work .dummy-wrk-first {
+  .my-work .container-first-work .dummy-wrk-first {
     display: block;
     max-width: 100%;
     aspect-ratio: 1 / 1;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  body .my-work .container-second-work {
+  .my-work .container-second-work {
     margin: 1em;
   }
-  body .my-work .container-second-work .dummy-wrk-second {
+  .my-work .container-second-work .dummy-wrk-second {
     display: block;
     max-width: 100%;
     aspect-ratio: 1 / 1;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  body .my-work .container-third-work {
+  .my-work .container-third-work {
     margin: 1em;
   }
-  body .my-work .container-third-work .dummy-wrk-third {
+  .my-work .container-third-work .dummy-wrk-third {
     display: block;
     max-width: 100%;
     aspect-ratio: 1 / 1;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  body .my-work .container-fourth-work {
+  .my-work .container-fourth-work {
     margin: 1em;
   }
-  body .my-work .container-fourth-work .dummy-wrk-fourth {
+  .my-work .container-fourth-work .dummy-wrk-fourth {
     display: block;
     aspect-ratio: 1 / 1;
     max-width: 100%;
@@ -537,7 +530,7 @@ body #footer {
 }
 
 @media only screen and (min-width: 1650px) {
-  body .my-work {
+  .my-work {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -550,7 +543,7 @@ body #footer {
 }
 
 @media only screen and (min-width: 1950px) {
-  body .my-work {
+  .my-work {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -563,7 +556,7 @@ body #footer {
 }
 
 @media only screen and (min-width: 2285px) {
-  body .my-work {
+  .my-work {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
