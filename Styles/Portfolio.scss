@@ -62,7 +62,7 @@ body {
     cursor: pointer;
     float: right;
     right: 20px;
-    top: 6vh;
+    top: 9vh;
     background: $PrimaryRed;
     padding: 1em;
     margin: auto;
@@ -275,6 +275,7 @@ h3 {
 }
 
 //----------CONTACT FORM-----------//
+
 .Contact-me {
   display: grid;
   justify-content: center;
@@ -317,6 +318,7 @@ h3 {
     padding: 0px;
   }
 }
+
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
