@@ -26,6 +26,9 @@ body {
   background-size: cover;
   min-height: 500px;
   height: 100%;
+  :root {
+    background-attachment: fixed;
+  }
 }
 //----------------NAVIGAČNÍ SEKCE----------------//
 .main-header-container {
