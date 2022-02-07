@@ -15,6 +15,7 @@ body {
   background-size: cover;
   min-height: 500px;
   height: 100%;
+  /* footer styling */
 }
 
 body :root {
@@ -24,7 +25,7 @@ body :root {
   background-size: cover;
 }
 
-.main-header-container {
+body .main-header-container {
   overflow: hidden;
   position: relative;
   margin: 0em;
@@ -36,24 +37,24 @@ body :root {
   background-color: transparent;
 }
 
-.main-header-container .my-name {
+body .main-header-container .my-name {
   display: inline-block;
   margin: 0em 0em 0.5em 0em;
   padding: 0em;
   font-size: clamp(2rem, 4.5vw, 3rem);
 }
 
-.main-header-container .my-name:hover {
+body .main-header-container .my-name:hover {
   color: #438fd6;
   font-weight: bold;
   cursor: pointer;
 }
 
-.main-header-container .my-name .span-jan {
+body .main-header-container .my-name .span-jan {
   font-size: clamp(2rem, 4.5vw, 3rem);
 }
 
-.main-header-container #mobile-menu {
+body .main-header-container #mobile-menu {
   display: none;
   position: fixed;
   z-index: 999;
@@ -75,12 +76,12 @@ body :root {
   border: 2px solid white;
 }
 
-.main-header-container ul {
+body .main-header-container ul {
   list-style: none;
   list-style-type: none;
 }
 
-.main-header-container ul li a {
+body .main-header-container ul li a {
   color: white;
   text-decoration: none;
   list-style: none;
@@ -96,12 +97,12 @@ body :root {
   overflow: hidden;
 }
 
-.main-header-container ul li a:hover {
+body .main-header-container ul li a:hover {
   font-weight: bold;
   color: #438fd6;
 }
 
-.main-header-container .icon {
+body .main-header-container .icon {
   display: block;
   float: right;
   cursor: pointer;
@@ -113,7 +114,7 @@ body :root {
   right: 20px;
 }
 
-.Introduction {
+body .Introduction {
   display: flexbox;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -133,7 +134,7 @@ body :root {
   height: clamp(228px, 58vw, 450px);
 }
 
-.Introduction .hlavni-nadpis {
+body .Introduction .hlavni-nadpis {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
@@ -148,7 +149,7 @@ body :root {
   overflow: hidden;
 }
 
-.Introduction .I-make-websites {
+body .Introduction .I-make-websites {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,7 +162,7 @@ body :root {
   letter-spacing: 1.1px;
 }
 
-.Introduction p {
+body .Introduction p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,7 +180,7 @@ body :root {
   text-shadow: 0.5px 0.8px 2px #0b355d;
 }
 
-.skills {
+body .skills {
   padding: 0em;
   margin: auto;
   display: -webkit-box;
@@ -196,42 +197,42 @@ body :root {
   width: clamp(320px, 92vw, 610px);
 }
 
-.skills i {
+body .skills i {
   font-size: clamp(40px, 11.5vw, 100px);
   justify-items: auto;
 }
 
-.skills .fa-html5:hover {
+body .skills .fa-html5:hover {
   color: #f16529;
   -webkit-transition: color 0.7s;
   transition: color 0.7s;
 }
 
-.skills .fa-css3-alt:hover {
+body .skills .fa-css3-alt:hover {
   color: #2aa9e0;
   -webkit-transition: color 0.7s;
   transition: color 0.7s;
 }
 
-.skills .fa-js-square:hover {
+body .skills .fa-js-square:hover {
   color: #f7e018;
   -webkit-transition: color 0.7s;
   transition: color 0.7s;
 }
 
-.skills .fa-sass:hover {
+body .skills .fa-sass:hover {
   color: #ce679a;
   -webkit-transition: color 0.7s;
   transition: color 0.7s;
 }
 
-.skills .fa-react:hover {
+body .skills .fa-react:hover {
   color: #41bce1;
   -webkit-transition: color 0.7s;
   transition: color 0.7s;
 }
 
-.nadpis-my-work {
+body .nadpis-my-work {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -247,12 +248,12 @@ body :root {
   font-size: clamp(2.7rem, 4.5vw, 3rem);
 }
 
-.my-work {
+body .my-work {
   display: -ms-grid;
   display: grid;
 }
 
-h3 {
+body h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -266,7 +267,7 @@ h3 {
   font-size: clamp(2rem, 4.5vw, 3rem);
 }
 
-.container-first-work {
+body .container-first-work {
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -274,7 +275,7 @@ h3 {
           justify-content: center;
 }
 
-.container-first-work .dummy-wrk-first {
+body .container-first-work .dummy-wrk-first {
   display: block;
   max-width: 100%;
   aspect-ratio: 1 / 1;
@@ -285,7 +286,7 @@ h3 {
   border-radius: 5%;
 }
 
-.container-second-work {
+body .container-second-work {
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -293,7 +294,7 @@ h3 {
           justify-content: center;
 }
 
-.container-second-work .dummy-wrk-second {
+body .container-second-work .dummy-wrk-second {
   display: block;
   max-width: 100%;
   aspect-ratio: 1 / 1;
@@ -304,7 +305,7 @@ h3 {
   border-radius: 5%;
 }
 
-.container-third-work {
+body .container-third-work {
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -312,7 +313,7 @@ h3 {
           justify-content: center;
 }
 
-.container-third-work .dummy-wrk-third {
+body .container-third-work .dummy-wrk-third {
   display: block;
   max-width: 100%;
   aspect-ratio: 1 / 1;
@@ -323,7 +324,7 @@ h3 {
   border-radius: 5%;
 }
 
-.container-fourth-work {
+body .container-fourth-work {
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -331,7 +332,7 @@ h3 {
           justify-content: center;
 }
 
-.container-fourth-work .dummy-wrk-fourth {
+body .container-fourth-work .dummy-wrk-fourth {
   display: block;
   max-width: 100%;
   aspect-ratio: 1 / 1;
@@ -342,7 +343,7 @@ h3 {
   border-radius: 5%;
 }
 
-.Contact-me {
+body .Contact-me {
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -355,9 +356,9 @@ h3 {
   /* Add a background color and some padding around the form */
 }
 
-.Contact-me input[type="text"],
-.Contact-me select,
-.Contact-me textarea {
+body .Contact-me input[type="text"],
+body .Contact-me select,
+body .Contact-me textarea {
   width: 100%;
   /* Full width */
   padding: 12px;
@@ -377,7 +378,7 @@ h3 {
   /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-.Contact-me input[type="submit"] {
+body .Contact-me input[type="submit"] {
   background-color: #ca374f;
   color: white;
   padding: 12px 20px;
@@ -386,19 +387,19 @@ h3 {
   cursor: pointer;
 }
 
-.Contact-me input[type="submit"]:hover {
+body .Contact-me input[type="submit"]:hover {
   background-color: #438fd6;
   -webkit-transition: background-color 0.5s;
   transition: background-color 0.5s;
 }
 
-.Contact-me .block {
+body .Contact-me .block {
   border-radius: 5px;
   background-color: #f2f2f200;
   padding: 0px;
 }
 
-#myBtn {
+body #myBtn {
   display: none;
   /* Hidden by default */
   position: fixed;
@@ -427,15 +428,15 @@ h3 {
   font-size: 40px;
 }
 
-.fas {
+body .fas {
   color: #ca3750;
 }
 
-.fas:hover {
+body .fas:hover {
   color: #438fd6;
 }
 
-footer {
+body footer {
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -445,33 +446,32 @@ footer {
   margin: 1em;
 }
 
-.social-icons {
+body .social-icons {
   font-size: 35px;
   cursor: pointer;
 }
 
-.fa-facebook:hover,
-.fa-instagram:hover,
-.fa-twitter:hover,
-.fa-linkedin:hover,
-.fa-twitch:hover {
+body .fa-facebook:hover,
+body .fa-instagram:hover,
+body .fa-twitter:hover,
+body .fa-linkedin:hover,
+body .fa-twitch:hover {
   color: #41bce1;
   -webkit-transition: color 0.7s;
   transition: color 0.7s;
 }
 
-.fab {
+body .fab {
   color: rgba(202, 55, 79, 0.746);
 }
 
-/* footer styling */
-#footer {
+body #footer {
   background-color: #808080;
   text-align: center;
 }
 
 @media only screen and (min-width: 1100px) {
-  .my-work {
+  body .my-work {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -482,7 +482,7 @@ footer {
         flex-wrap: wrap;
     table-layout: fixed;
   }
-  .my-work h3 {
+  body .my-work h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -494,40 +494,40 @@ footer {
     margin: auto;
     font-size: clamp(2rem, 4.5vw, 3rem);
   }
-  .my-work .container-first-work {
+  body .my-work .container-first-work {
     margin: 1em;
   }
-  .my-work .container-first-work .dummy-wrk-first {
+  body .my-work .container-first-work .dummy-wrk-first {
     display: block;
     max-width: 100%;
     aspect-ratio: 1 / 1;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .my-work .container-second-work {
+  body .my-work .container-second-work {
     margin: 1em;
   }
-  .my-work .container-second-work .dummy-wrk-second {
+  body .my-work .container-second-work .dummy-wrk-second {
     display: block;
     max-width: 100%;
     aspect-ratio: 1 / 1;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .my-work .container-third-work {
+  body .my-work .container-third-work {
     margin: 1em;
   }
-  .my-work .container-third-work .dummy-wrk-third {
+  body .my-work .container-third-work .dummy-wrk-third {
     display: block;
     max-width: 100%;
     aspect-ratio: 1 / 1;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .my-work .container-fourth-work {
+  body .my-work .container-fourth-work {
     margin: 1em;
   }
-  .my-work .container-fourth-work .dummy-wrk-fourth {
+  body .my-work .container-fourth-work .dummy-wrk-fourth {
     display: block;
     aspect-ratio: 1 / 1;
     max-width: 100%;
@@ -537,7 +537,7 @@ footer {
 }
 
 @media only screen and (min-width: 1650px) {
-  .my-work {
+  body .my-work {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -550,7 +550,7 @@ footer {
 }
 
 @media only screen and (min-width: 1950px) {
-  .my-work {
+  body .my-work {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -563,7 +563,7 @@ footer {
 }
 
 @media only screen and (min-width: 2285px) {
-  .my-work {
+  body .my-work {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
